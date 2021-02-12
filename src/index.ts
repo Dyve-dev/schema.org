@@ -1,17 +1,3 @@
-import nunjucks from 'nunjucks';
-import path from 'path';
-
-class Schema {
-  constructor() {
-    nunjucks.configure(path.join(__dirname, '../templates/'));
-  }
-}
-
-export class WebSite extends Schema {
-  constructor() {
-    super();
-  }
-  render = (data?: any) => {
-    return nunjucks.render('website.ldjson.njk', data);
-  };
-}
+export { WebSiteJsonLd } from './models/website';
+export { OrganizationJsonLd } from './models/organization';
+export { PersonJsonLd } from './models/person';

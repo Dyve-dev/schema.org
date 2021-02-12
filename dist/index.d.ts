@@ -1,8 +1,3 @@
-declare class Schema {
-    constructor();
-}
-export declare class WebSite extends Schema {
-    constructor();
-    render: (data?: any) => string;
-}
-export {};
+export { WebSiteJsonLd } from './models/website';
+export { OrganizationJsonLd } from './models/organization';
+export { PersonJsonLd } from './models/person';
