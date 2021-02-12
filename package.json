@@ -1,0 +1,46 @@
+{
+  "name": "@dyve/schema.org",
+  "version": "0.0.1",
+  "description": "generate jsonld using Schema.org vocabulary",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "npx rimraf dist/*",
+    "test": "cd __test__ && cross-env NODE_ENV=test mocha --recursive './**/*spec.js' --exit || exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dyve-dev/schema.org.git"
+  },
+  "keywords": [
+    "schema.org",
+    "jsonld",
+    "dyve",
+    "structured",
+    "data"
+  ],
+  "author": "@dyve",
+  "license": "ISC",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Dyve-dev/schema.org/issues"
+  },
+  "homepage": "https://github.com/Dyve-dev/schema.org#readme",
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/node": "^14.14.25",
+    "chai": "*",
+    "cross-env": "*",
+    "mocha": "*",
+    "rimraf": "*"
+  },
+  "dependencies": {
+    "debug": "^4.3.1",
+    "schema-dts": "^0.8.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
