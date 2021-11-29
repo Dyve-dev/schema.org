@@ -37,7 +37,7 @@
     "rimraf": "*"
   },
   "dependencies": {
-    "debug": "^4.3.1",
+    "debug": "^4.3.3",
     "schema-dts": "^0.8.2"
   },
   "publishConfig": {
